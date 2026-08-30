@@ -81,12 +81,7 @@
           "Customizable floating caption bar"
         ],
         "author": { "@id": "https://kenjabrowser.kofukuai.com/#org" },
-        "offers": [
-          { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD", "description": "Full browser features with a 30,000-character starter allowance for bilingual captions" },
-          { "@type": "Offer", "name": "Kenja PRO Monthly", "price": "2.99", "priceCurrency": "USD" },
-          { "@type": "Offer", "name": "Kenja PRO Yearly", "price": "14.99", "priceCurrency": "USD" },
-          { "@type": "Offer", "name": "Kenja PRO Lifetime", "price": "19.99", "priceCurrency": "USD", "description": "One-time purchase, unlimited bilingual live captions forever" }
-        ]
+        "isAccessibleForFree": true
       },
       {
         "@type": "FAQPage",
@@ -114,7 +109,7 @@
           {
             "@type": "Question",
             "name": "Is KenjaBrowser free?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The free plan includes all core browser features plus a 30,000-character starter allowance for bilingual captions. Kenja PRO unlocks unlimited captions at $2.99/month, $14.99/year, or $19.99 as a one-time lifetime purchase." }
+            "acceptedAnswer": { "@type": "Answer", "text": "The app is free to download and includes all core browser features with a starter allowance for bilingual captions. Kenja PRO optionally unlocks unlimited captions — plans and pricing are shown in the app." }
           },
           {
             "@type": "Question",
@@ -140,7 +135,6 @@
         <a href="#how-it-works">How it works</a>
         <a href="#features">Features</a>
         <a href="#screenshots">Screenshots</a>
-        <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="header-actions">
@@ -388,69 +382,6 @@
       </div>
     </section>
 
-    <!-- ============ PRICING ============ -->
-    <section id="pricing" aria-labelledby="pricing-title">
-      <div class="container">
-        <div class="reveal">
-          <p class="eyebrow">Pricing</p>
-          <h2 class="section-title" id="pricing-title">Free to start. Pay once if you love it.</h2>
-          <p class="section-lede">Every plan includes the full browser, the ad blocker, and privacy features. Captions start free — upgrade only if you want unlimited.</p>
-        </div>
-        <div class="pricing-grid">
-          <div class="price-card reveal">
-            <p class="price-name">Free</p>
-            <p class="price-value">$0</p>
-            <p class="price-desc">Full browser, captions starter pack</p>
-            <ul>
-              <li>All core browser features</li>
-              <li>Ad &amp; tracker blocker</li>
-              <li>30,000 caption characters</li>
-              <li>On-device AI, zero uploads</li>
-            </ul>
-            <a class="btn btn-ghost" href="#download" data-store-link>Download free</a>
-          </div>
-          <div class="price-card reveal">
-            <p class="price-name">PRO Monthly</p>
-            <p class="price-value">$2.99<small>/mo</small></p>
-            <p class="price-desc">Unlimited bilingual captions</p>
-            <ul>
-              <li>Unlimited live captions</li>
-              <li>All language pairs</li>
-              <li>All display modes &amp; styling</li>
-              <li>Cancel anytime</li>
-            </ul>
-            <a class="btn btn-ghost" href="#download" data-store-link>Get PRO</a>
-          </div>
-          <div class="price-card reveal">
-            <p class="price-name">PRO Yearly</p>
-            <p class="price-value">$14.99<small>/yr</small></p>
-            <p class="price-desc">Everything in PRO, billed yearly</p>
-            <ul>
-              <li>Unlimited live captions</li>
-              <li>Save 58% vs monthly</li>
-              <li>All future updates</li>
-              <li>One Mac, one license</li>
-            </ul>
-            <a class="btn btn-ghost" href="#download" data-store-link>Get PRO</a>
-          </div>
-          <div class="price-card highlight reveal">
-            <span class="price-tagline">Best value</span>
-            <p class="price-name">PRO Lifetime</p>
-            <p class="price-value">$19.99<small> once</small></p>
-            <p class="price-desc">Pay once. Own it forever.</p>
-            <ul>
-              <li>Unlimited captions, forever</li>
-              <li>No subscription, no renewal</li>
-              <li>Launch-offer price</li>
-              <li>Everything in PRO</li>
-            </ul>
-            <a class="btn btn-primary" href="#download" data-store-link>Get lifetime</a>
-          </div>
-        </div>
-        <p class="pricing-note">Prices in USD. In-app purchases are processed by Apple — we never see your payment details.</p>
-      </div>
-    </section>
-
     <!-- ============ FAQ ============ -->
     <section id="faq" aria-labelledby="faq-title" style="background: var(--bg-2); border-block: 1px solid var(--line);">
       <div class="container">
@@ -486,7 +417,7 @@
           <details class="faq">
             <summary>Is KenjaBrowser free?</summary>
             <div class="faq-body">
-              <p>The free plan includes all core browser features plus a 30,000-character starter allowance for bilingual captions. Kenja PRO unlocks unlimited captions at $2.99/month, $14.99/year, or $19.99 as a one-time lifetime purchase.</p>
+              <p>The app is free to download and includes all core browser features with a starter allowance for bilingual captions. Kenja PRO optionally unlocks unlimited captions — plans and pricing are shown in the app.</p>
             </div>
           </details>
           <details class="faq">
@@ -535,7 +466,6 @@
         <nav class="footer-links" aria-label="Footer">
           <a href="#features">Features</a>
           <a href="#screenshots">Screenshots</a>
-          <a href="#pricing">Pricing</a>
           <a href="privacy/">Privacy Policy</a>
           <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Terms of Use</a>
           <a href="https://github.com/KenjaHub/KenjaBrowser" rel="noopener">GitHub</a>
