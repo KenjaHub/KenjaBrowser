@@ -46,9 +46,9 @@
   /* ---------- live caption simulator ---------- */
   var LINES = [
     {
-      lang: "EN → 中文",
+      lang: "EN → 日本語",
       src: "Welcome back to the channel — today we're building something fun.",
-      dst: "欢迎回到频道——今天我们要做点有趣的东西。"
+      dst: "チャンネルへおかえりなさい。今日は面白いものを作ります。"
     },
     {
       lang: "日本語 → English",
@@ -56,14 +56,14 @@
       dst: "The weather is lovely today — let's go for a walk."
     },
     {
-      lang: "EN → 日本語",
+      lang: "EN → Español",
       src: "This is the most important slide of the whole lecture.",
-      dst: "これは講義全体の中で最も重要なスライドです。"
+      dst: "Esta es la diapositiva más importante de toda la clase."
     },
     {
-      lang: "한국어 → 中文",
+      lang: "한국어 → English",
       src: "정말 맛있어요! 다음에 또 올게요.",
-      dst: "真的太好吃了！下次我还会再来。"
+      dst: "It's really delicious — I'll definitely come back."
     }
   ];
 

@@ -1,75 +1,60 @@
-# KenjaBrowser — 官网 / SEO 落地页（GitHub Pages）
+# KenjaBrowser — Official Site / SEO Landing Page (GitHub Pages)
 
-本仓库是 [KenjaBrowser](https://github.com/KenjaHub/KenjaBrowser)（macOS 实时双语字幕浏览器）的
-产品官网，托管在 **GitHub Pages**，自定义域名 **https://kenjabrowser.kofukuai.com**。
+This repo hosts the product site for [KenjaBrowser](https://github.com/KenjaHub/KenjaBrowser)
+(a macOS browser with real-time bilingual live captions), served by **GitHub Pages** at
+**https://kenjabrowser.kofukuai.com**.
 
-纯静态、零依赖、零构建：HTML + CSS + 原生 JS，图片为自托管 WebP/JPG，字体为自托管 woff2。
+Fully static, zero dependencies, no build step: HTML + CSS + vanilla JS,
+self-hosted WebP/JPG images and self-hosted woff2 fonts.
 
-## 站点结构
+## Site structure
 
 ```
-├── index.html            # 英文主页（SEO 主页面）
-├── privacy.html          # 隐私政策（EN）——可填入 App Store Connect 的 Privacy Policy URL
-├── 404.html              # 404 页
-├── zh/
-│   ├── index.html        # 中文主页（hreflang 互指）
-│   └── privacy.html      # 隐私政策（中文）
+├── index.html            # English landing page (main SEO page)
+├── privacy/index.html    # Privacy policy — fill into App Store Connect's Privacy Policy URL
+├── 404.html              # 404 page
 ├── assets/
-│   ├── css/styles.css    # 全站样式
-│   ├── js/main.js        # 字幕模拟动画 / reveal / 商店链接
-│   ├── img/              # 截图(WebP+JPG)、OG 封面、favicon
+│   ├── css/styles.css    # site styles
+│   ├── js/main.js        # caption simulator / reveal animations / store link
+│   ├── img/              # screenshots (WebP+JPG), OG cover, favicons
 │   └── fonts/            # Bricolage Grotesque / IBM Plex (woff2, latin)
-├── CNAME                 # kenjabrowser.kofukuai.com（勿删）
+├── CNAME                 # kenjabrowser.kofukuai.com (do not delete)
 ├── robots.txt
 ├── sitemap.xml
 └── manifest.webmanifest
 ```
 
-## 首次启用（只做一次）
+## After the app goes live on the App Store
 
-1. **开启 Pages**：仓库 **Settings → Pages → Build and deployment → Source**
-   选 *Deploy from a branch*，Branch 选 `main` / `/ (root)`，保存。
-2. **DNS 解析**（在 kofukuai.com 的 DNS 服务商处添加）：
-
-   | 类型  | 主机名          | 值                      | TTL  |
-   |------|-----------------|-------------------------|------|
-   | CNAME | `kenjabrowser` | `kenjahub.github.io` | 600 |
-
-3. **绑定域名**：Settings → Pages → Custom domain 填 `kenjabrowser.kofukuai.com`，
-   等检查通过后勾选 **Enforce HTTPS**。
-   （仓库根目录的 `CNAME` 文件已包含该域名，推送后 GitHub 会自动识别。）
-
-## App Store 上架后（上线链接）
-
-应用过审后，打开 `assets/js/main.js`，把顶部常量改成真实 App Store 链接并推送：
+Once the app is approved, open `assets/js/main.js` and set the constant at the top
+to the real App Store URL, then push:
 
 ```js
 var APP_STORE_URL = "https://apps.apple.com/app/idXXXXXXXXX";
 ```
 
-页面上所有带 `data-store-link` 的按钮会自动指向该链接。在此之前按钮回落到
-`#download` 下载区（不产生死链）。
+Every element with `data-store-link` picks it up automatically. Until then the
+buttons fall back to the `#download` section (no dead links).
 
-同时建议把 App Store Connect 里的 **Privacy Policy URL** 填为：
+Also set the App Store Connect **Privacy Policy URL** to:
 `https://kenjabrowser.kofukuai.com/privacy/`
 
-## 已内置的 SEO 要点
+## Built-in SEO
 
-- EN + zh-CN 双语页面，`hreflang`（含 `x-default`）互指
-- JSON-LD 结构化数据：`SoftwareApplication`（含四档价格 offers）、`FAQPage`、`Organization`、`WebSite`
-- Open Graph / Twitter Card（1200×630 封面 `assets/img/og-cover.jpg`）
-- `sitemap.xml`（含 hreflang alternates）+ `robots.txt`，均使用自定义域名绝对地址
-- 语义化 HTML、单 H1、图片含关键词 alt、懒加载 + 固定宽高（CLS≈0）
-- 自托管字体（font-display: swap），页面总重 < 1MB，无第三方请求
-- 相对路径资源引用：自定义域名 / `kenjahub.github.io/KenjaBrowser/` / 本地预览均可正常加载
+- JSON-LD structured data: `SoftwareApplication`, `FAQPage`, `Organization`, `WebSite`
+- Open Graph / Twitter Card (1200×630 cover at `assets/img/og-cover.jpg`)
+- `sitemap.xml` + `robots.txt` using absolute custom-domain URLs
+- Semantic HTML, single H1, keyword-rich alt text, lazy loading + fixed dimensions (CLS ≈ 0)
+- Self-hosted fonts (`font-display: swap`), page weight < 1 MB, no third-party requests
+- Relative asset paths: works under the custom domain, the project URL, and local preview
 
-## 更换截图 / 图片
+## Replacing screenshots
 
-源图在 `~/Documents/KenjaBrowser/KenjaBrowser-keynote-img/KenjaBrowser/`
-（`KenjaBrowser.001.png` ~ `006.png`，2560×1600）。重新生成：
+Source images live in `~/Documents/KenjaBrowser/KenjaBrowser-keynote-img/KenjaBrowser/`
+(`KenjaBrowser.001.png` … `006.png`, 2560×1600). Regenerate:
 
 ```bash
-# WebP（PIL）
+# WebP (PIL)
 python3 - <<'EOF'
 from PIL import Image
 im = Image.open('KenjaBrowser.001.png').convert('RGB')
@@ -79,11 +64,11 @@ EOF
 ffmpeg -i KenjaBrowser.001.png -vf scale=1600:-2 -q:v 6 assets/img/shot-1.jpg
 ```
 
-替换后同时更新对应 `<picture>` 里的 alt 文案即可。
+Update the matching `<picture>` alt text after replacing.
 
-## 本地预览
+## Local preview
 
 ```bash
-cd KenjaBrowser && python3 -m http.server 4173
-# 打开 http://localhost:4173
+cd kenjabrowser-site && python3 -m http.server 4173
+# open http://localhost:4173
 ```
