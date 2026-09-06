@@ -597,20 +597,67 @@ section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 .platform-note strong { color: var(--text); font-weight: 600; }
 .platform-note a { color: var(--accent); }
 
-/* ---------- iPhone & iPad band ---------- */
-.ios-band {
-  background:
-    radial-gradient(700px 300px at 50% 0%, rgba(240, 154, 64, 0.07), transparent 70%),
-    var(--bg-2);
-  border-block: 1px solid var(--line);
-  text-align: center;
+/* ---------- Feature platform chips ---------- */
+.chip-mac, .chip-all { color: var(--accent); border-color: rgba(240, 154, 64, 0.45); }
+
+/* ---------- iPhone & iPad section ---------- */
+.ios-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 34px;
+  align-items: center;
+  margin-top: 42px;
 }
-.ios-band .eyebrow { justify-content: center; }
-.ios-band .eyebrow::before { display: none; }
-.ios-chips { justify-content: center; margin-top: 26px; }
-.ios-chips .x { color: var(--ok); }
+.ios-media img {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--line-2);
+  box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.8);
+}
+.ios-cards { display: flex; flex-direction: column; gap: 20px; }
+.platform-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+.platform-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+}
+.platform-head h3 { font-size: 18.5px; color: var(--text); }
+.platform-tag {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
+.platform-card ul { list-style: none; margin: 14px 0 0; }
+.platform-card li {
+  position: relative;
+  padding: 5px 0 5px 24px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.platform-card li::before {
+  content: "";
+  position: absolute;
+  left: 2px; top: 12px;
+  width: 12px; height: 7px;
+  border-left: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg);
+}
 .ios-meta {
-  margin-top: 22px;
+  margin-top: 26px;
   font-family: var(--font-mono);
   font-size: 12.5px;
   color: var(--muted-2);
@@ -761,6 +808,7 @@ details.faq .faq-body a { color: var(--accent-2); }
   .cc-stage { max-width: 560px; }
   .features-grid, .steps-grid { grid-template-columns: 1fr 1fr; }
   .pricing-grid { grid-template-columns: 1fr 1fr; }
+  .ios-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
 @media (max-width: 640px) {
@@ -772,6 +820,7 @@ details.faq .faq-body a { color: var(--accent-2); }
   .header-cta { display: none; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .download-ctas .btn { width: 100%; justify-content: center; }
+  .platform-head { flex-wrap: wrap; }
 }
 
 @media (prefers-reduced-motion: reduce) {
