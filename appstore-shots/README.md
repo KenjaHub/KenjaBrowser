@@ -5,23 +5,23 @@ Redesigned store screenshots, built as HTML slides and exported to
 website (Bricolage Grotesque, IBM Plex Sans, accent `#f09a40`, grain overlay),
 so store listings and the site read as one product.
 
-> **Shipping PNGs:** `png/KenjaBrowser.001–006.png` are the Keynote-exported
-> masters (same copy, rebuilt visuals) — they are the source of truth for
-> upload. The HTML slides in `src/` are the original design drafts; running
-> `./export.sh` will OVERWRITE `png/` with HTML renders, so don't re-export
-> over the masters. Slide 7 (family shot) only exists as an HTML render.
+> **Shipping PNGs:** slides 001 and 003–007 are the Keynote-exported masters
+> (same copy, rebuilt visuals) — they are the source of truth for upload.
+> Slide 002 (family shot) is an HTML render (`./export.sh 2`). The other HTML
+> slides in `src/` are the original design drafts; a full `./export.sh` run
+> will OVERWRITE the masters — only ever export slide 2.
 
 ## Screenshot lineup
 
 | # | File | Headline | Message |
 |---|------|----------|---------|
-| 1 | `KenjaBrowser.001.png` | Real-Time Bilingual Captions | Hero: YouTube with EN→JA caption bar. Matches the site's H1 keywords. |
-| 2 | `KenjaBrowser.002.png` | One Browser. Every Apple Device. | Family shot: real app screenshots — Mac (live captions), iPad (start page), iPhone (ad filter) — in device frames. iOS = private browser, captions stay Mac-only. |
-| 3 | `KenjaBrowser.003.png` | 14 Languages In → 25 Out | Language coverage as a number-led headline; TV-app UI + language-pair chips. |
-| 4 | `KenjaBrowser.004.png` | 100% On-Device AI | Stanford lecture + "processed on this Mac" + No Uploads / No Cloud / No Tracking. |
-| 5 | `KenjaBrowser.005.png` | Works With Any Website | Dense news-site page with embedded video + captions. |
-| 6 | `KenjaBrowser.006.png` | One Toolbar. Total Control. | Light slide. The real caption toolbar (language pills →, Bilingual, Aa, Start, CC) highlighted in place on a live stream. Mirrors the actual app UI; no settings maze. |
-| 7 | `KenjaBrowser.007.png` | Private by Design | Light slide. Shield popover (47 blocked), crossed-out ad slot, Touch ID / vault / zero-collection chips. |
+| 1 | `KenjaBrowser.001.png` | Real-Time Bilingual Captions | Hero. Keynote master. |
+| 2 | `KenjaBrowser.002.png` | One Browser. Every Apple Device. | Family shot (HTML render): real app screenshots — Mac (live captions), iPad + iPhone (Google search, `02-search-google`) — in device frames. iOS = private browser, captions stay Mac-only. |
+| 3 | `KenjaBrowser.003.png` | 14 Languages In → 25 Out | Keynote master. |
+| 4 | `KenjaBrowser.004.png` | 100% On-Device AI | Keynote master. |
+| 5 | `KenjaBrowser.005.png` | Works With Any Website | Keynote master. |
+| 6 | `KenjaBrowser.006.png` | One Toolbar. Total Control. | Keynote master. |
+| 7 | `KenjaBrowser.007.png` | Private by Design | Keynote master. |
 
 > Device screenshots for slide 2 live in `src/assets/` (copied from the app
 > repo's `AppStoreScreenshots/` raw captures and the site's `shot-1.jpg`).
