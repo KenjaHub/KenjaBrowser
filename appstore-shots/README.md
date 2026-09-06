@@ -10,11 +10,16 @@ so store listings and the site read as one product.
 | # | File | Headline | Message |
 |---|------|----------|---------|
 | 1 | `KenjaBrowser.001.png` | Real-Time Bilingual Captions | Hero: YouTube with EN→JA caption bar. Matches the site's H1 keywords. |
-| 2 | `KenjaBrowser.002.png` | 14 Languages In → 25 Out | Language coverage as a number-led headline; TV-app UI + language-pair chips. |
-| 3 | `KenjaBrowser.003.png` | 100% On-Device AI | NEW slide (replaced a near-duplicate). Stanford lecture + "processed on this Mac" + No Uploads / No Cloud / No Tracking. |
-| 4 | `KenjaBrowser.004.png` | Works With Any Website | Dense news-site page with embedded video + captions (replaces the empty wiki page). |
-| 5 | `KenjaBrowser.005.png` | One Toolbar. Total Control. | Light slide. The real caption toolbar (language pills →, Bilingual, Aa, Start, CC) highlighted in place on a live stream — control without leaving the video. Mirrors the actual app UI; no settings maze. |
-| 6 | `KenjaBrowser.006.png` | Private by Design | Light slide. Shield popover (47 blocked), crossed-out ad slot, Touch ID / vault / zero-collection chips. |
+| 2 | `KenjaBrowser.002.png` | One Browser. Every Apple Device. | Family shot: real app screenshots — Mac (live captions), iPad (start page), iPhone (ad filter) — in device frames. iOS = private browser, captions stay Mac-only. |
+| 3 | `KenjaBrowser.003.png` | 14 Languages In → 25 Out | Language coverage as a number-led headline; TV-app UI + language-pair chips. |
+| 4 | `KenjaBrowser.004.png` | 100% On-Device AI | Stanford lecture + "processed on this Mac" + No Uploads / No Cloud / No Tracking. |
+| 5 | `KenjaBrowser.005.png` | Works With Any Website | Dense news-site page with embedded video + captions. |
+| 6 | `KenjaBrowser.006.png` | One Toolbar. Total Control. | Light slide. The real caption toolbar (language pills →, Bilingual, Aa, Start, CC) highlighted in place on a live stream. Mirrors the actual app UI; no settings maze. |
+| 7 | `KenjaBrowser.007.png` | Private by Design | Light slide. Shield popover (47 blocked), crossed-out ad slot, Touch ID / vault / zero-collection chips. |
+
+> Device screenshots for slide 2 live in `src/assets/` (copied from the app
+> repo's `AppStoreScreenshots/` raw captures and the site's `shot-1.jpg`).
+> If the app UI changes, refresh those copies.
 
 ## Structure
 
@@ -22,7 +27,8 @@ so store listings and the site read as one product.
 appstore-shots/
 ├── src/
 │   ├── shared.css      # tokens, window mockup, caption bar, chips
-│   ├── slide-{1..6}.html
+│   ├── slide-{1..7}.html
+│   ├── assets/         # real iPhone/iPad app screenshots for the family slide
 │   └── audit.js        # layout audit (runs only with ?audit=1)
 ├── export.sh           # render PNGs via headless Chrome
 └── png/                # exported KenjaBrowser.00{1..6}.png
