@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Slide 2 — 14 Languages In, 25 Out</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .slide { padding: 64px 110px 80px; }
+  .head-block { margin-top: 80px; }
+  .headline .arrow { color: var(--text); font-weight: 800; }
+
+  .stage { margin-top: 44px; }
+  .win { width: 1540px; }
+
+  /* TV-app style page */
+  .tv { padding: 0 44px 40px; color: #eef1f7; font-family: var(--font-body); }
+  .tv-nav { height: 60px; display: flex; align-items: center; gap: 34px; font-size: 22px; font-weight: 600; color: #9aa2b5; }
+  .tv-nav .on { color: #fff; }
+  .tv-nav .search { margin-left: auto; color: #9aa2b5; }
+
+  .hero {
+    position: relative;
+    height: 330px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #000;
+  }
+  .hero .scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6,8,14,0.72) 0%, rgba(6,8,14,0.15) 55%, rgba(6,8,14,0.45) 100%); z-index: 2; }
+  .hero .title {
+    position: absolute; left: 40px; top: 44px; z-index: 4;
+    font-family: var(--font-display); font-weight: 800; font-size: 58px; letter-spacing: 0.16em;
+  }
+  .hero .tagline { position: absolute; left: 42px; top: 122px; z-index: 4; font-size: 23px; color: #cfd6e4; font-weight: 500; }
+  .hero .watch {
+    position: absolute; left: 40px; bottom: 40px; z-index: 4;
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,0.92); color: #0b0c10;
+    font-size: 22px; font-weight: 600; padding: 13px 30px; border-radius: 999px;
+  }
+  .hero .watch svg { width: 24px; height: 24px; }
+  .hero .captionbar { bottom: 40px; }
+
+  .row-label { margin: 34px 0 18px; font-size: 24px; font-weight: 700; color: #eef1f7; }
+  .posters { display: flex; gap: 22px; }
+  .poster { width: 186px; }
+  .poster .art { height: 268px; border-radius: 14px; position: relative; overflow: hidden; }
+  .poster .name { margin-top: 12px; font-size: 20px; font-weight: 600; color: #dfe4ee; }
+  .poster .meta { font-size: 17px; color: #8b93a6; margin-top: 3px; }
+
+  /* language pair chips */
+  .pairs { display: flex; gap: 22px; justify-content: center; margin-top: 42px; }
+  .pair {
+    display: flex; align-items: center; gap: 14px;
+    padding: 18px 30px; border-radius: 999px;
+    background: rgba(255,255,255,0.05); border: 1px solid var(--line-2);
+    font-family: var(--font-body); font-size: 27px; font-weight: 600; color: var(--text);
+  }
+  .pair svg { width: 26px; height: 26px; color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="slide slide--dark">
+  <div class="brand"><img src="../../assets/img/icon-192.png" alt="">Kenja<em>Browser</em></div>
+  <div class="for-mac">FREE · FOR MAC</div>
+
+  <div class="head-block">
+    <h1 class="headline">14 Languages In <span class="arrow">→</span> 25 Out</h1>
+    <p class="sub-en">Hear it in 14, read it in 25 — live, on any video</p>
+    <p class="sub-jp">音声認識14言語、翻訳は25言語に対応</p>
+  </div>
+
+  <div class="stage">
+    <div class="mac-window mac-window--ui-dark win">
+      <div class="mw-titlebar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="mw-tab"><span class="fav" style="background:linear-gradient(135deg,#4a1e63,#f2955e)"></span>Aurora — StreamTV</div>
+        <span class="plus">+</span>
+      </div>
+      <div class="mw-toolbar">
+        <div class="nav-arrows"><span>‹</span><span>›</span></div>
+        <div class="urlbar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          streamtv.com/movie/aurora
+        </div>
+        <div class="tb-actions"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span></div>
+      </div>
+
+      <div class="mw-body">
+        <div class="tv">
+          <div class="tv-nav">
+            <span class="on">Home</span><span>Movies</span><span>Series</span><span>Live</span>
+            <span class="search"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+          </div>
+
+          <div class="hero">
+            <div class="scene scene--city"></div>
+            <div class="scrim"></div>
+            <div class="title">AURORA</div>
+            <div class="tagline">Documentary · 2026 · 4K HDR</div>
+            <div class="watch"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg>Play</div>
+            <div class="captionbar">
+              <div class="cap-badge"><i></i>LIVE CC · EN → JA</div>
+              <div class="cap-orig">Aurora — the light of the northern sky</div>
+              <div class="cap-tr">オーロラ — 北の空の光</div>
+            </div>
+          </div>
+
+          <div class="row-label">Top Movies</div>
+          <div class="posters">
+            <div class="poster"><div class="art" style="background:linear-gradient(150deg,#123a63,#a8436b)"></div><div class="name">Deep Field</div><div class="meta">Sci-Fi · 2h 08m</div></div>
+            <div class="poster"><div class="art" style="background:linear-gradient(150deg,#3a2f77,#6d5bd0)"></div><div class="name">Night Circuit</div><div class="meta">Thriller · 1h 56m</div></div>
+            <div class="poster"><div class="art" style="background:linear-gradient(150deg,#0d1b3e,#1d6a7a)"></div><div class="name">The Cartographer</div><div class="meta">Drama · 2h 21m</div></div>
+            <div class="poster"><div class="art" style="background:linear-gradient(150deg,#4a1e63,#f2955e)"></div><div class="name">Sunset Line</div><div class="meta">Romance · 1h 47m</div></div>
+            <div class="poster"><div class="art" style="background:linear-gradient(150deg,#1b1038,#a8436b)"></div><div class="name">Hidden Grove</div><div class="meta">Adventure · 2h 02m</div></div>
+            <div class="poster"><div class="art" style="background:linear-gradient(150deg,#141222,#2a2140)"></div><div class="name">Static</div><div class="meta">Horror · 1h 39m</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pairs">
+    <div class="pair">English <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg> 日本語</div>
+    <div class="pair">Español <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg> English</div>
+    <div class="pair">中文 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg> 日本語</div>
+    <div class="pair">한국어 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg> English</div>
+    <div class="pair">+ 21 more</div>
+  </div>
+</div>
+<script src="audit.js"></script>
+</body>
+</html>

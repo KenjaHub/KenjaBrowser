@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Slide 3 — 100% On-Device AI</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .slide { padding: 64px 110px 80px; }
+  .head-block { margin-top: 80px; }
+  .headline .pct { color: var(--text); }
+
+  .stage { margin-top: 42px; }
+  .win { width: 1400px; }
+  .player { position: relative; height: 788px; background: #000; overflow: hidden; }
+  .captionbar .lockrow {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-bottom: 12px;
+    font-family: var(--font-mono); font-size: 19px; font-weight: 500;
+    letter-spacing: 0.18em; color: #9fe8a9;
+  }
+  .captionbar .lockrow svg { width: 22px; height: 22px; }
+
+  .chips { margin-top: 28px; }
+  .chip { padding: 24px 44px; }
+</style>
+</head>
+<body>
+<div class="slide slide--dark">
+  <div class="brand"><img src="../../assets/img/icon-192.png" alt="">Kenja<em>Browser</em></div>
+  <div class="for-mac">FREE · FOR MAC</div>
+
+  <div class="head-block">
+    <div class="kicker"><i class="dot"></i>ON-DEVICE AI</div>
+    <h1 class="headline"><span class="pct">100%</span> On-Device AI</h1>
+    <p class="sub-en">Your audio never leaves your Mac</p>
+    <p class="sub-jp">音声も翻訳も、すべてこのMacの中で処理されます</p>
+  </div>
+
+  <div class="stage">
+    <div class="mac-window win">
+      <div class="mw-titlebar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="mw-tab"><span class="fav" style="background:#8c1d40"></span>CS229 — Lecture 3 · Stanford Online</div>
+        <span class="plus">+</span>
+      </div>
+      <div class="mw-toolbar">
+        <div class="nav-arrows"><span>‹</span><span>›</span></div>
+        <div class="urlbar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          online.stanford.edu/cs229/lecture-3
+        </div>
+        <div class="tb-actions"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span></div>
+      </div>
+
+      <div class="mw-body">
+        <div class="player">
+          <div class="scene scene--studio"></div>
+          <div class="play-badge"></div>
+          <div class="captionbar">
+            <div class="cap-badge"><i></i>LIVE CC · EN → JA</div>
+            <div class="lockrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+              PROCESSED ON THIS MAC
+            </div>
+            <div class="cap-orig">Gradient descent minimizes the loss</div>
+            <div class="cap-tr">勾配降下法は損失を最小化する</div>
+          </div>
+          <div class="vbar">
+            <div class="track"><div class="fill" style="width:62%"></div><div class="knob" style="left:62%"></div></div>
+            <div class="ctr">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+              <span class="time">21:07 / 34:02</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chips">
+    <div class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V6"/><path d="m8 9 4-4 4 4"/><path d="M4 20h16"/><path d="m3 3 18 18"/></svg>
+      <div class="t"><div class="l-en">No Uploads</div><div class="l-jp">音声を外部へ送信しません</div></div>
+    </div>
+    <div class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 17H9a7 7 0 1 1 6.7-9h1.8a4.5 4.5 0 1 1 0 9Z"/><path d="m3 3 18 18"/></svg>
+      <div class="t"><div class="l-en">No Cloud</div><div class="l-jp">クラウド処理なし</div></div>
+    </div>
+    <div class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.7 5.1A9 9 0 0 1 21 12c0 .7-.1 1.4-.3 2"/><path d="M6.6 6.6A9 9 0 0 0 3 12a9 9 0 0 0 12.8 8.1"/><path d="M3 3l18 18"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+      <div class="t"><div class="l-en">No Tracking</div><div class="l-jp">追跡・データ収集なし</div></div>
+    </div>
+  </div>
+</div>
+<script src="audit.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Slide 1 — Real-Time Bilingual Captions</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .slide { padding: 64px 110px 84px; }
+  .head-block { margin-top: 76px; }
+
+  .stage { margin-top: 38px; }
+  .win { width: 1780px; height: 1052px; }
+
+  /* YouTube page */
+  .yt-head {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 0 26px;
+    border-bottom: 1px solid #e8e8ee;
+    background: #fff;
+  }
+  .yt-logo { display: flex; align-items: center; gap: 12px; font-size: 27px; font-weight: 700; color: #0f0f0f; letter-spacing: -0.04em; }
+  .yt-logo .mark { width: 40px; height: 28px; border-radius: 8px; background: #ff0033; position: relative; flex: none; }
+  .yt-logo .mark::after {
+    content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-42%, -50%);
+    border-left: 12px solid #fff; border-top: 7.5px solid transparent; border-bottom: 7.5px solid transparent;
+  }
+  .yt-search {
+    flex: 1; max-width: 640px; height: 42px; margin: 0 auto;
+    border: 1px solid #dcdce2; border-radius: 999px;
+    display: flex; align-items: center; padding: 0 24px;
+    color: #8a8a94; font-size: 21px; gap: 12px;
+  }
+  .yt-ava { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #4a90d9, #9b59b6); }
+
+  .yt-main { display: flex; }
+  .yt-left { width: 1350px; }
+  .yt-player { position: relative; height: 728px; background: #000; overflow: hidden; }
+  .yt-side { flex: 1; padding: 24px; border-left: 1px solid #e8e8ee; background: #fff; }
+  .up-next { font-size: 22px; font-weight: 700; color: #0f0f0f; margin-bottom: 18px; }
+  .rel { display: flex; gap: 14px; margin-bottom: 20px; }
+  .rel .thumb { width: 200px; height: 112px; border-radius: 12px; flex: none; position: relative; overflow: hidden; }
+  .rel .meta .t { font-size: 21px; font-weight: 600; color: #0f0f0f; line-height: 1.3; }
+  .rel .meta .c { font-size: 18px; color: #606068; margin-top: 8px; }
+  .rel .meta .v { font-size: 18px; color: #90909a; }
+
+  .yt-info { padding: 20px 26px 24px; background: #fff; }
+  .yt-info h1 { font-size: 30px; font-weight: 700; color: #0f0f0f; letter-spacing: -0.01em; }
+  .yt-info .row { display: flex; align-items: center; gap: 18px; margin-top: 16px; }
+  .ch-ava { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #f09a40, #e2598b); }
+  .ch-name { font-size: 23px; font-weight: 600; color: #0f0f0f; }
+  .ch-sub { font-size: 18px; color: #606068; }
+  .subscribe { margin-left: 10px; background: #0f0f0f; color: #fff; font-size: 20px; font-weight: 600; padding: 10px 24px; border-radius: 999px; }
+  .pills { margin-left: auto; display: flex; gap: 12px; }
+  .pill { border: 1px solid #dcdce2; border-radius: 999px; padding: 10px 20px; font-size: 20px; font-weight: 500; color: #0f0f0f; display: flex; align-items: center; gap: 10px; }
+  .pill svg { width: 22px; height: 22px; }
+</style>
+</head>
+<body>
+<div class="slide slide--dark">
+  <div class="brand"><img src="../../assets/img/icon-192.png" alt="">Kenja<em>Browser</em></div>
+  <div class="for-mac">FREE · FOR MAC</div>
+
+  <div class="head-block">
+    <div class="kicker"><i class="dot"></i>AI LIVE CAPTIONS</div>
+    <h1 class="headline">Real-Time Bilingual Captions</h1>
+    <p class="sub-en">for any web video — YouTube, courses, live streams</p>
+    <p class="sub-jp">どんな動画にも、リアルタイムで二言語字幕を</p>
+  </div>
+
+  <div class="stage">
+    <div class="mac-window win">
+      <div class="mw-titlebar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="mw-tab"><span class="fav" style="background:#ff0033"></span>The Future of Energy — TechVision</div>
+        <span class="plus">+</span>
+      </div>
+      <div class="mw-toolbar">
+        <div class="nav-arrows"><span>‹</span><span>›</span></div>
+        <div class="urlbar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          youtube.com/watch?v=energy-keynote
+        </div>
+        <div class="tb-actions"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span></div>
+      </div>
+
+      <div class="mw-body">
+        <div class="yt-head">
+          <div class="yt-logo"><span class="mark"></span>YouTube</div>
+          <div class="yt-search">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            Search
+          </div>
+          <div class="yt-ava"></div>
+        </div>
+
+        <div class="yt-main">
+          <div class="yt-left">
+            <div class="yt-player">
+              <div class="scene scene--sunset"></div>
+              <div class="play-badge"></div>
+              <div class="captionbar">
+                <div class="cap-badge"><i></i>LIVE CC · EN → JA</div>
+                <div class="cap-orig">The future of energy is already here</div>
+                <div class="cap-tr">未来のエネルギーは、すでにここにある</div>
+              </div>
+              <div class="vbar">
+                <div class="track"><div class="fill"></div><div class="knob"></div></div>
+                <div class="ctr">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+                  <span class="time">12:41 / 33:18</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="yt-info">
+              <h1>The Future of Energy — Full Keynote</h1>
+              <div class="row">
+                <div class="ch-ava"></div>
+                <div>
+                  <div class="ch-name">TechVision</div>
+                  <div class="ch-sub">1.2M subscribers</div>
+                </div>
+                <div class="subscribe">Subscribe</div>
+                <div class="pills">
+                  <div class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></svg>24K</div>
+                  <div class="pill">Share</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="yt-side">
+            <div class="up-next">Up next</div>
+            <div class="rel">
+              <div class="thumb" style="background: linear-gradient(135deg,#0d1b3e,#1d6a7a);"></div>
+              <div class="meta"><div class="t">Inside the AI Chip Lab</div><div class="c">Silicon Weekly</div><div class="v">486K views</div></div>
+            </div>
+            <div class="rel">
+              <div class="thumb" style="background: linear-gradient(135deg,#3a2f77,#6d5bd0);"></div>
+              <div class="meta"><div class="t">Solid-State Batteries, Explained</div><div class="c">Deep Tech</div><div class="v">1.1M views</div></div>
+            </div>
+            <div class="rel">
+              <div class="thumb" style="background: linear-gradient(135deg,#4a1e63,#f2955e);"></div>
+              <div class="meta"><div class="t">Live: Artemis Mission Briefing</div><div class="c">NASA Stream</div><div class="v">LIVE</div></div>
+            </div>
+            <div class="rel">
+              <div class="thumb" style="background: linear-gradient(135deg,#123a63,#a8436b);"></div>
+              <div class="meta"><div class="t">CS229 — Lecture 3: Regression</div><div class="c">Stanford Online</div><div class="v">92K views</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="audit.js"></script>
+</body>
+</html>

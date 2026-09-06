@@ -588,6 +588,35 @@ section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 .no-chip s { color: var(--muted-2); text-decoration: none; }
 .no-chip .x { color: var(--accent); font-weight: 700; }
 
+/* ---------- Hero platform note (iPhone & iPad) ---------- */
+.platform-note {
+  margin-top: 20px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+.platform-note strong { color: var(--text); font-weight: 600; }
+.platform-note a { color: var(--accent); }
+
+/* ---------- iPhone & iPad band ---------- */
+.ios-band {
+  background:
+    radial-gradient(700px 300px at 50% 0%, rgba(240, 154, 64, 0.07), transparent 70%),
+    var(--bg-2);
+  border-block: 1px solid var(--line);
+  text-align: center;
+}
+.ios-band .eyebrow { justify-content: center; }
+.ios-band .eyebrow::before { display: none; }
+.ios-chips { justify-content: center; margin-top: 26px; }
+.ios-chips .x { color: var(--ok); }
+.ios-meta {
+  margin-top: 22px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--muted-2);
+  letter-spacing: 0.06em;
+}
+
 /* ---------- Pricing ---------- */
 .pricing-grid {
   display: grid;
