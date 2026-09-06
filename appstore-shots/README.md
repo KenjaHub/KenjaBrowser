@@ -5,6 +5,12 @@ Redesigned store screenshots, built as HTML slides and exported to
 website (Bricolage Grotesque, IBM Plex Sans, accent `#f09a40`, grain overlay),
 so store listings and the site read as one product.
 
+> **Shipping PNGs:** `png/KenjaBrowser.001–006.png` are the Keynote-exported
+> masters (same copy, rebuilt visuals) — they are the source of truth for
+> upload. The HTML slides in `src/` are the original design drafts; running
+> `./export.sh` will OVERWRITE `png/` with HTML renders, so don't re-export
+> over the masters. Slide 7 (family shot) only exists as an HTML render.
+
 ## Screenshot lineup
 
 | # | File | Headline | Message |
