@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>KenjaBrowser — App Store Slides (macOS)</title>
+<style>
+  :root { --bg:#0b0c10; --text:#eef1f7; --muted:#a7b0c2; --accent:#f09a40; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(1100px 520px at 82% -10%, rgba(240,154,64,.13), transparent 62%), var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Hiragino Sans", "PingFang SC", sans-serif;
+    padding: 48px 32px 64px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  h1 { font-size: 28px; letter-spacing: -0.01em; }
+  h1 em { font-style: normal; color: var(--accent); }
+  p.lede { color: var(--muted); margin-top: 8px; font-size: 15px; }
+  .grid { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 22px; }
+  a.card {
+    display: block; text-decoration: none; color: var(--text);
+    border: 1px solid rgba(255,255,255,.14); border-radius: 14px; overflow: hidden;
+    background: rgba(255,255,255,.04);
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  a.card:hover { transform: translateY(-2px); border-color: rgba(240,154,64,.6); }
+  a.card img { display: block; width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top; }
+  .meta { padding: 14px 16px; }
+  .meta .n { font-family: ui-monospace, Menlo, monospace; font-size: 11.5px; letter-spacing: .18em; color: var(--accent); }
+  .meta .t { margin-top: 6px; font-size: 15.5px; font-weight: 600; }
+  .meta .d { margin-top: 4px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Kenja<em>Browser</em> — App Store Slides</h1>
+  <p class="lede">macOS App Store 截图套图 · 2560×1600 · 点击卡片查看可缩放的原尺寸页面，导出的 PNG 在 <a href="../png/" style="color:var(--accent)">../png/</a></p>
+  <div class="grid">
+    <a class="card" href="slide-1.html"><img src="../png/KenjaBrowser.001.png" alt="" loading="lazy"><div class="meta"><div class="n">01</div><div class="t">Real-Time Bilingual Captions</div><div class="d">主视觉 · YouTube 双语字幕</div></div></a>
+    <a class="card" href="slide-2.html"><img src="../png/KenjaBrowser.002.png" alt="" loading="lazy"><div class="meta"><div class="n">02</div><div class="t">One Browser. Every Apple Device.</div><div class="d">Mac + iPhone + iPad 全家桶</div></div></a>
+    <a class="card" href="slide-3.html"><img src="../png/KenjaBrowser.003.png" alt="" loading="lazy"><div class="meta"><div class="n">03</div><div class="t">14 Languages In → 25 Out</div><div class="d">语言覆盖</div></div></a>
+    <a class="card" href="slide-4.html"><img src="../png/KenjaBrowser.004.png" alt="" loading="lazy"><div class="meta"><div class="n">04</div><div class="t">100% On-Device AI</div><div class="d">本地处理 · 隐私</div></div></a>
+    <a class="card" href="slide-5.html"><img src="../png/KenjaBrowser.005.png" alt="" loading="lazy"><div class="meta"><div class="n">05</div><div class="t">Works With Any Website</div><div class="d">新闻页实况</div></div></a>
+    <a class="card" href="slide-6.html"><img src="../png/KenjaBrowser.006.png" alt="" loading="lazy"><div class="meta"><div class="n">06</div><div class="t">One Toolbar. Total Control.</div><div class="d">真实工具栏控件</div></div></a>
+    <a class="card" href="slide-7.html"><img src="../png/KenjaBrowser.007.png" alt="" loading="lazy"><div class="meta"><div class="n">07</div><div class="t">Private by Design</div><div class="d">隐私与安全</div></div></a>
+  </div>
+</div>
+</body>
+</html>
