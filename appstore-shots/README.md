@@ -15,6 +15,7 @@ so store listings and the site read as one product.
 | 4 | `KenjaBrowser.004.png` | Works With Any Website | Dense news-site page with embedded video + captions (replaces the empty wiki page). |
 | 5 | `KenjaBrowser.005.png` | One Toolbar. Total Control. | Light slide. The real caption toolbar (language pills →, Bilingual, Aa, Start, CC) highlighted in place on a live stream — control without leaving the video. Mirrors the actual app UI; no settings maze. |
 | 6 | `KenjaBrowser.006.png` | Private by Design | Light slide. Shield popover (47 blocked), crossed-out ad slot, Touch ID / vault / zero-collection chips. |
+| 7 | `KenjaBrowser.007.png` | Free to Start. Pro Forever. | Light slide. Pricing: Free ($0, 30,000-char caption starter) vs Kenja PRO ($19.99 one-time lifetime, unlimited captions). Numbers verified against `Config/KenjaBrower.storekit` and `Subscription.swift`. |
 
 ## Structure
 
@@ -22,7 +23,7 @@ so store listings and the site read as one product.
 appstore-shots/
 ├── src/
 │   ├── shared.css      # tokens, window mockup, caption bar, chips
-│   ├── slide-{1..6}.html
+│   ├── slide-{1..7}.html
 │   └── audit.js        # layout audit (runs only with ?audit=1)
 ├── export.sh           # render PNGs via headless Chrome
 └── png/                # exported KenjaBrowser.00{1..6}.png

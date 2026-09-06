@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Slide 7 — Free to Start, Pro Forever</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .slide { padding: 64px 110px 80px; }
+  .head-block { margin-top: 80px; }
+
+  .plans { display: flex; gap: 44px; margin-top: 56px; align-items: stretch; justify-content: center; }
+  .plan {
+    width: 780px;
+    border-radius: 26px;
+    padding: 46px 52px;
+    position: relative;
+  }
+  .plan--free {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 16px 40px -22px rgba(0, 0, 0, 0.25);
+  }
+  .plan--pro {
+    background: #ffffff;
+    border: 3px solid #d97c1a;
+    box-shadow: 0 30px 70px -26px rgba(217, 124, 26, 0.45);
+  }
+  .plan .tag {
+    font-family: var(--font-mono); font-size: 20px; font-weight: 500;
+    letter-spacing: 0.2em; color: #77777d;
+  }
+  .plan--pro .tag { color: #d97c1a; }
+  .plan .name {
+    font-family: var(--font-display); font-weight: 800; font-size: 52px;
+    color: #1d1d1f; margin-top: 10px; letter-spacing: -0.01em;
+  }
+  .plan .price-row { display: flex; align-items: baseline; gap: 16px; margin-top: 18px; }
+  .plan .price {
+    font-family: var(--font-display); font-weight: 800; font-size: 84px;
+    line-height: 1; color: #1d1d1f; letter-spacing: -0.02em;
+  }
+  .plan--pro .price { color: #d97c1a; }
+  .plan .per { font-size: 26px; font-weight: 600; color: #77777d; }
+  .plan ul { list-style: none; margin-top: 30px; }
+  .plan li {
+    display: flex; align-items: flex-start; gap: 16px;
+    font-size: 27px; font-weight: 500; color: #3a3a3e;
+    padding: 13px 0;
+  }
+  .plan li svg { width: 30px; height: 30px; flex: none; margin-top: 3px; color: #34a853; }
+  .plan--pro li svg { color: #d97c1a; }
+  .plan li b { font-weight: 700; color: #1d1d1f; }
+  .pro-badge {
+    position: absolute; top: -22px; right: 44px;
+    background: #d97c1a; color: #fff;
+    font-family: var(--font-mono); font-size: 19px; font-weight: 500;
+    letter-spacing: 0.16em; padding: 11px 24px; border-radius: 999px;
+    box-shadow: 0 10px 26px -10px rgba(217, 124, 26, 0.8);
+  }
+  .footnote {
+    margin-top: 44px; text-align: center;
+    font-family: var(--font-body); font-size: 24px; color: #77777d;
+  }
+  .footnote b { color: #3a3a3e; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="slide slide--light">
+  <div class="brand"><img src="../../assets/img/icon-192.png" alt="">Kenja<em>Browser</em></div>
+  <div class="for-mac">FREE · FOR MAC</div>
+
+  <div class="head-block">
+    <h1 class="headline">Free to Start. Pro Forever.</h1>
+    <p class="sub-en">Unlimited captions with Kenja PRO — a one-time purchase, never a subscription</p>
+    <p class="sub-jp">無料で始めて、気に入ったら買い切りで。</p>
+  </div>
+
+  <div class="plans">
+    <div class="plan plan--free">
+      <div class="tag">INCLUDED</div>
+      <div class="name">Free</div>
+      <div class="price-row">
+        <div class="price" style="font-size:64px;">$0</div>
+        <div class="per">to download</div>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span>All core browser features — tabs, downloads, find-in-page</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span>Built-in ad &amp; tracker blocker</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span>Touch ID lock &amp; encrypted bookmark vault</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span>Live captions starter — <b>30,000 characters</b></span></li>
+      </ul>
+    </div>
+
+    <div class="plan plan--pro">
+      <div class="pro-badge">ONE-TIME · LIFETIME</div>
+      <div class="tag">KENJA PRO FOR MAC</div>
+      <div class="name">Pro</div>
+      <div class="price-row">
+        <div class="price">$19.99</div>
+        <div class="per">once · yours for life</div>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span>Everything in Free</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span><b>Unlimited bilingual captions</b> — every language pair</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span>Works on-device, forever — no renewal, no sign-in</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m5 13 4 4L19 7"/></svg><span>Free updates included</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footnote">No subscription. No account. PRO is tied to your Apple&nbsp;ID — <b>one purchase, unlimited captions.</b></p>
+
+  <script src="audit.js"></script>
+</div>
+</body>
+</html>
