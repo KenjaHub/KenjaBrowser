@@ -8,7 +8,7 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 OUT="png"
 mkdir -p "$OUT"
 
-slides="${*:-1 2 3 4 5 6 7}"
+slides="${*:-1 2 3 4 5 6}"
 
 for n in $slides; do
   src="src/slide-${n}.html"
